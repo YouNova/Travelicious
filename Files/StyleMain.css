@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+html,body{
+		padding: 0px;
+		margin: 0px;
+		overflow-x: hidden;
+	}
+
+	.container{
+		width:100%;
+		min-height:500px;
+		margin-left:15%;
+		display: flex;
+		flex-direction:row;
+		flex-wrap:wrap;
+
+	}
+	.container .box
+	{
+		position: relative;
+		width:25%;
+		height:177px;
+		margin:10px;
+		box-sizing:border-box; 
+		display:inline-block;
+	}
+	.container .box .imgBox
+	{
+		position:relative;
+		overflow:hidden;
+
+	}
+	.container .box .imgBox img
+	{
+		max-width:100%;
+		width:100%;
+		height:100%;
+		transition:transform 2s;
+
+	}
+	.container .box:hover .imgBox img
+	{
+		transform:scale(1.2);
+	}
+	.container .box .details{
+		position:absolute;
+		top:10px;
+		left:10px;
+		bottom:10px;
+		right:10px;
+		background:rgba(0,0,0,.8);
+		transform:scaleY(0);
+		transition: transform .5s;
+	}
+	.container .box:hover .details{
+		
+		transform: scaleY(1);
+	
+	}
+	.container .box .details .content{
+		position:absolute;
+		top:50%;
+		transform:translateY(-50%);
+		text-align:center;
+		padding:15px;
+		color:#fff;
+		
+	  }
+  	.container .box .details .content h2{
+  	margin:0;
+  	padding:0;
+  	font-size:20px;
+  	color:#ff0;
+  	}
+  	.container .box .details .content p{
+  	margin:10px 0 0;
+  	padding:0;
+  	}
+
+	.Bill{
+	
+		width:500px;
+		height:500px;
+		margin-top:100px;
+		margin-left:440px;
+		margin-bottom:100px;
+		background:white;
+	}
+
+
+	.FirstFrame{
+		height:300px;
+		width:100%;
+		margin-left: 0px;
+		margin-right: 0px;
+		background-image:url('Mountain.jpg');
+		background-repeat: no-repeat;
+		background-size: 1430px 300px;
+
+		}
+	.RomeFrame{
+		height:300px;
+		width:33.3%;
+		float: left;
+		background-image: url('Rome_main.jpg');
+		background-size: cover;
+	}
+	.LondonFrame{
+		height:300px;
+		width:33.3%;
+		float: left;
+		background-image: url('London_Main.jpg');
+		background-size: cover;
+	}
+	.PragueBudapestFrame{
+		height:300px;
+		width:33.3%;
+		float: left;
+		background-image: url('PragueBudapest_Main.jpg');
+		background-size: cover;
+	}
+	.menuLogo{
+		height:90px;
+		width:100%;
+		background-color: black;
+
+	}
+	.Logintext{
+		
+		float:right;
+		padding-top: 12px;
+		padding-right:20px;
+		color: white;
+	}
+	.Registerform{
+
+		float:right;
+		padding-top: 12px;
+		padding-right:20px;
+		color: white;
+	}
+
+		.Title{
+			
+			text-align: center;
+			font-size: 40px;
+			color: #594f4d;
+		}
+
+		.text{
+			
+			margin-left: 20%;
+			margin-right: 20%;
+			font-size: 18px;
+		}
+
+		h4{
+			color:white;
+			text-align: center;
+		}
+		
+
+		.TitleGallery{
+
+			text-align:center;
+			font-size: 40px;
+			color: #594f4d;
+		}
+
+
+		.bodyForm{
+		margin: 0;
+		padding: 0;
+		font-family: 'Arial';
+		background-image: url(London_inner_2.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		}
+
+		.wrap{
+
+		width:450px;
+		overflow: auto;
+		margin: auto;
+		margin-top: 30px;
+		padding: 20px;
+		background-color: #fff;
+		border: 1px solid silver;
+		border-radius: 5px;
+	}
+
+	.wrap .input_box{
+	width:400px;
+	height: 35px;
+	margin-bottom: 10px;
+	border-radius:  3px;
+	border:1px solid silver;
+	padding: 10px;
+	}
+
+	.wrap .personal{
+	padding: 5px;
+	width: 412px;
+	height: 40px;
+	background-color: blue;
+	color: #fff;
+	border-radius: 3px;
+	border:0;
+	font-size: 18px;
+
+	}
+
+	.wrap h2{
+	text-align: center;
+	}
+
+	.wrap .radio_btn{
+	color: black;
+	margin-bottom: 10px;
+
+	}
+
+	.timeline{
+		font-family: 'Montserrat', sans-serif;
+		position: relative;
+		margin: 50px auto;
+		padding: 40px 0;
+		width: 1000px;
+		box-sizing: border-box;
+	}
+
+	.timeline:before{
+		content: '';
+		position: absolute;
+		left:50%;
+		width: 2px;
+		height: 100%;
+		background: #c5c5c5;
+	}
+
+	.timeline ul{
+		margin:0;
+		padding: 0;
+	}
+
+	.timeline ul li {
+
+		list-style: none;
+		position: relative;
+		width:50%;
+		padding: 20px 40px;
+		box-sizing: border-box;
+	}
+
+	.timeline ul li:nth-child(odd){
+		float: left;
+		text-align: right;
+		clear: both;
+	}
+
+	.timeline ul li:nth-child(even){
+		float: right;
+		text-align: left;
+		clear: both;
+	}
+
+	.Day{
+		padding-bottom: 20px;
+	}
+
+	.timeline ul li:nth-child(odd):before{
+		content: '';
+		position: absolute;
+		top:24px;
+		right:-6px;
+		width: 10px;
+		height: 10px;
+		background:  rgba(233,33,99,1);
+		border-radius: 50%;
+		box-shadow: 0 0 0 3px rgba(233,33,99,0.2);
+	}
+
+	.timeline ul li:nth-child(even):before{
+		content: '';
+		position: absolute;
+		top:24px;
+		left:-4px;
+		width: 10px;
+		height: 10px;
+		background:  rgba(233,33,99,1);
+		border-radius: 50%;
+		box-shadow: 0 0 0 3px rgba(233,33,99,0.2);
+	}
+
+	.timeline ul li h3{
+		margin:0;
+		padding: 0;
+		font-weight: 800;
+		color: rgba(233,33,99,1);
+	}
+
+	.timeline ul li p{
+		margin: 10px 0 0;
+		padding: 0;
+	}
+
+	.timeline ul li .time h5{
+		margin:0;
+		padding: 0;
+		font-size: 14px;
+	}
+	.timeline ul li:nth-child(odd) .time{
+		position: absolute;
+		top:12px;
+		right: -110px;
+		margin: 0;
+		padding: 8px 16px;
+		background: rgba(233,33,99,1);
+		color: #fff;
+		border-radius: 18px;
+		box-shadow: 0 0 0 3px rgba(233,33,99,0.3);
+
+	}
+
+	.timeline ul li:nth-child(even) .time{
+		position: absolute;
+		top:12px;
+		left: -110px;
+		margin: 0;
+		padding: 8px 16px;
+		background: rgba(233,33,99,1);
+		color: #fff;
+		border-radius: 18px;
+		box-shadow: 0 0 0 3px rgba(233,33,99,0.3);
+		
+	}
